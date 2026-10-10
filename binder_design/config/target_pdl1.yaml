@@ -1,0 +1,52 @@
+# 靶点：PD-L1（CD274）胞外 IgV 结构域
+#
+# 选 PD-L1 的理由：RFdiffusion (Watson et al., Nature 2023) 的五个结合剂靶点之一，
+# 有公开的实验命中率可对标；结构域小，AF2 复合物预测省时；PD-1 界面在文献里很清楚。
+#
+# 注意：hotspot 不在这里硬编码。01_prepare_target.py 会从 PD-1/PD-L1 复合物
+# 结构里实测界面残基，把候选写到 data/target/hotspots.json，再由你从中挑 3-6 个。
+# 不要凭记忆填残基号。
+
+source:
+  # PD-1 / PD-L1 复合物。用它的目的有两个：取出干净的 PD-L1 链，
+  # 同时用 PD-1 链反推真实界面残基作为 hotspot 候选。
+  pdb_id: 4ZQK
+  # 下载后的本地路径（01 会自动下载到这里）
+  local_pdb: data/target/4zqk.pdb
+
+target:
+  # PD-L1 在 4ZQK 里是链 A（序列以 AFTVTVPKDLYVVEY... 开头）。
+  # 01 会校验链存在且残基区间落在实测范围内。
+  chain: A
+  # 只保留这段残基（IgV 结构域）。链 A 实测范围是 18-132。
+  res_start: 18
+  res_end: 132
+  # 清理后的靶点结构，喂给 RFdiffusion
+  clean_pdb: data/target/pdl1_target.pdb
+
+partner:
+  # PD-1 链（实测残基 33-146），仅用于计算界面，不进入设计
+  chain: B
+  # Cβ 距离阈值（Å）。RFdiffusion 论文对 hotspot 的定义是靶点上
+  # 与 binder Cβ 距离在 10 Å 以内的残基，这里沿用同一口径。
+  contact_cutoff: 10.0
+
+binder:
+  # binder 长度采样区间。收窄区间比 80-150 更容易做组间比较，
+  # 因为长度本身会影响 in silico 通过率。
+  length_min: 80
+  length_max: 120
+
+hotspots:
+  # 下面两组是 01_prepare_target.py 从 4ZQK 实测界面算出来的推荐值
+  # （recommended_design / recommended_negative_control），已填好。
+  #
+  # 官方建议 3-6 个：模型训练时只看到真实 hotspot 的 0-20%，
+  # 推理时它会自己补更多接触，给太多会过度约束界面。
+  #
+  # 放大规模前请在 PyMOL 里打开 clean_pdb 确认一眼：
+  # design 组应聚在 PD-1 结合面上，negative_control 组应在背面。
+  design: [A56, A115, A121, A123]
+  # 阴性对照：靶点背面、与 PD-1 界面无重叠的一小片表面残基。
+  # 用来验证漏斗筛的是界面信号，而不是 AF2 的整体乐观偏差。
+  negative_control: [A31, A32, A33, A105]

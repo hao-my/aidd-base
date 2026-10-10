@@ -1,0 +1,283 @@
+{
+  "pdb_id": "4ZQK",
+  "target_chain": "A",
+  "partner_chain": "B",
+  "contact_cutoff": 10.0,
+  "observed_res_range": [
+    18,
+    132
+  ],
+  "recommended_design": [
+    "A56",
+    "A115",
+    "A123",
+    "A114"
+  ],
+  "recommended_negative_control": [
+    "A32",
+    "A33",
+    "A31",
+    "A105"
+  ],
+  "interface_candidates": [
+    {
+      "resi": 56,
+      "resn": "TYR",
+      "tag": "A56",
+      "min_cb_dist": 4.06
+    },
+    {
+      "resi": 121,
+      "resn": "ALA",
+      "tag": "A121",
+      "min_cb_dist": 4.94
+    },
+    {
+      "resi": 122,
+      "resn": "ASP",
+      "tag": "A122",
+      "min_cb_dist": 5.03
+    },
+    {
+      "resi": 117,
+      "resn": "SER",
+      "tag": "A117",
+      "min_cb_dist": 5.28
+    },
+    {
+      "resi": 66,
+      "resn": "GLN",
+      "tag": "A66",
+      "min_cb_dist": 5.49
+    },
+    {
+      "resi": 20,
+      "resn": "THR",
+      "tag": "A20",
+      "min_cb_dist": 5.53
+    },
+    {
+      "resi": 54,
+      "resn": "ILE",
+      "tag": "A54",
+      "min_cb_dist": 5.64
+    },
+    {
+      "resi": 76,
+      "resn": "VAL",
+      "tag": "A76",
+      "min_cb_dist": 5.7
+    },
+    {
+      "resi": 115,
+      "resn": "MET",
+      "tag": "A115",
+      "min_cb_dist": 6.06
+    },
+    {
+      "resi": 123,
+      "resn": "TYR",
+      "tag": "A123",
+      "min_cb_dist": 6.07
+    },
+    {
+      "resi": 26,
+      "resn": "ASP",
+      "tag": "A26",
+      "min_cb_dist": 6.14
+    },
+    {
+      "resi": 124,
+      "resn": "LYS",
+      "tag": "A124",
+      "min_cb_dist": 6.19
+    },
+    {
+      "resi": 125,
+      "resn": "ARG",
+      "tag": "A125",
+      "min_cb_dist": 6.28
+    },
+    {
+      "resi": 113,
+      "resn": "ARG",
+      "tag": "A113",
+      "min_cb_dist": 6.4
+    },
+    {
+      "resi": 120,
+      "resn": "GLY",
+      "tag": "A120",
+      "min_cb_dist": 6.41
+    },
+    {
+      "resi": 18,
+      "resn": "ALA",
+      "tag": "A18",
+      "min_cb_dist": 6.97
+    },
+    {
+      "resi": 68,
+      "resn": "VAL",
+      "tag": "A68",
+      "min_cb_dist": 7.32
+    },
+    {
+      "resi": 58,
+      "resn": "GLU",
+      "tag": "A58",
+      "min_cb_dist": 7.41
+    },
+    {
+      "resi": 19,
+      "resn": "PHE",
+      "tag": "A19",
+      "min_cb_dist": 7.52
+    },
+    {
+      "resi": 23,
+      "resn": "VAL",
+      "tag": "A23",
+      "min_cb_dist": 7.66
+    },
+    {
+      "resi": 119,
+      "resn": "GLY",
+      "tag": "A119",
+      "min_cb_dist": 7.97
+    },
+    {
+      "resi": 21,
+      "resn": "VAL",
+      "tag": "A21",
+      "min_cb_dist": 8.04
+    },
+    {
+      "resi": 63,
+      "resn": "ASN",
+      "tag": "A63",
+      "min_cb_dist": 8.26
+    },
+    {
+      "resi": 73,
+      "resn": "ASP",
+      "tag": "A73",
+      "min_cb_dist": 8.32
+    },
+    {
+      "resi": 55,
+      "resn": "VAL",
+      "tag": "A55",
+      "min_cb_dist": 8.38
+    },
+    {
+      "resi": 67,
+      "resn": "PHE",
+      "tag": "A67",
+      "min_cb_dist": 8.6
+    },
+    {
+      "resi": 127,
+      "resn": "THR",
+      "tag": "A127",
+      "min_cb_dist": 8.99
+    },
+    {
+      "resi": 111,
+      "resn": "VAL",
+      "tag": "A111",
+      "min_cb_dist": 9.05
+    },
+    {
+      "resi": 65,
+      "resn": "ILE",
+      "tag": "A65",
+      "min_cb_dist": 9.19
+    },
+    {
+      "resi": 27,
+      "resn": "LEU",
+      "tag": "A27",
+      "min_cb_dist": 9.22
+    },
+    {
+      "resi": 126,
+      "resn": "ILE",
+      "tag": "A126",
+      "min_cb_dist": 9.37
+    },
+    {
+      "resi": 75,
+      "resn": "LYS",
+      "tag": "A75",
+      "min_cb_dist": 9.4
+    },
+    {
+      "resi": 22,
+      "resn": "THR",
+      "tag": "A22",
+      "min_cb_dist": 9.41
+    },
+    {
+      "resi": 61,
+      "resn": "ASP",
+      "tag": "A61",
+      "min_cb_dist": 9.52
+    },
+    {
+      "resi": 57,
+      "resn": "TRP",
+      "tag": "A57",
+      "min_cb_dist": 9.55
+    },
+    {
+      "resi": 69,
+      "resn": "HIS",
+      "tag": "A69",
+      "min_cb_dist": 9.7
+    },
+    {
+      "resi": 114,
+      "resn": "CYS",
+      "tag": "A114",
+      "min_cb_dist": 9.91
+    },
+    {
+      "resi": 116,
+      "resn": "ILE",
+      "tag": "A116",
+      "min_cb_dist": 9.98
+    }
+  ],
+  "negative_control_candidates": [
+    {
+      "resi": 32,
+      "resn": "TYR",
+      "tag": "A32",
+      "sasa": 105.8,
+      "dist_to_interface_centroid": 25.61
+    },
+    {
+      "resi": 33,
+      "resn": "GLY",
+      "tag": "A33",
+      "sasa": 46.1,
+      "dist_to_interface_centroid": 25.16
+    },
+    {
+      "resi": 31,
+      "resn": "GLU",
+      "tag": "A31",
+      "sasa": 101.7,
+      "dist_to_interface_centroid": 24.92
+    },
+    {
+      "resi": 105,
+      "resn": "LYS",
+      "tag": "A105",
+      "sasa": 87.0,
+      "dist_to_interface_centroid": 22.72
+    }
+  ],
+  "note": "recommended_design / recommended_negative_control 可以直接填进 config/target_pdl1.yaml 的 hotspots 两个字段。填之前务必在 PyMOL 里打开 clean_pdb 看一眼：design 组应聚在 PD-1 结合面上，negative_control 组应在背面且不与界面重叠。interface_candidates 给出全部界面残基，想换 hotspot 从这里挑。"
+}

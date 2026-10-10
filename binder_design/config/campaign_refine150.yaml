@@ -1,0 +1,28 @@
+# 跟进 1：在全量漏斗里界面 pAE 最好的 150 个骨架上，
+# 用可溶 ProteinMPNN、温度 0.1、每个骨架 8 条序列再测一轮 AF2。
+# 骨架是 outputs/diffusion/refine150 里的符号链接，不重跑扩散，也不覆盖全量结果。
+
+name: refine150
+
+diffusion:
+  groups:
+    - name: refine150
+      hotspot_set: design
+      num_designs: 150
+      noise_scale_ca: 0.0
+      noise_scale_frame: 0.0
+  extra_args: []
+
+sequence:
+  seqs_per_struct: 8
+  relax_cycles: 0
+  use_soluble_weights: true
+  device: cpu
+  temperature: 0.1
+  omit_aas: CX
+
+predict:
+  chunk_size: 250
+
+negative_control:
+  enabled: false

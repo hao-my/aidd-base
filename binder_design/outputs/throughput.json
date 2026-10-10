@@ -1,0 +1,318 @@
+{
+  "diffusion.noise00": [
+    {
+      "n_items": 1000,
+      "seconds": 34104.7,
+      "seconds_per_item": 34.1,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-29 17:34:48",
+      "note": "hotspots=[A56,A115,A121,A123] noise_ca=0.0"
+    }
+  ],
+  "diffusion.noise05": [
+    {
+      "n_items": 1000,
+      "seconds": 34227.6,
+      "seconds_per_item": 34.23,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 03:05:15",
+      "note": "hotspots=[A56,A115,A121,A123] noise_ca=0.5"
+    }
+  ],
+  "diffusion.negctrl": [
+    {
+      "n_items": 300,
+      "seconds": 10268.9,
+      "seconds_per_item": 34.23,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 05:56:24",
+      "note": "hotspots=[A31,A32,A33,A105] noise_ca=0.0"
+    }
+  ],
+  "sequence.noise00": [
+    {
+      "n_items": 2000,
+      "seconds": 2112.6,
+      "seconds_per_item": 1.06,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 06:31:37",
+      "note": "device=cpu relax_cycles=0 soluble=True"
+    }
+  ],
+  "sequence.noise05": [
+    {
+      "n_items": 2000,
+      "seconds": 2146.0,
+      "seconds_per_item": 1.07,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 07:07:23",
+      "note": "device=cpu relax_cycles=0 soluble=True"
+    }
+  ],
+  "sequence.negctrl": [
+    {
+      "n_items": 600,
+      "seconds": 643.7,
+      "seconds_per_item": 1.07,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 07:18:07",
+      "note": "device=cpu relax_cycles=0 soluble=True"
+    }
+  ],
+  "predict.noise00": [
+    {
+      "n_items": 250,
+      "seconds": 4477.2,
+      "seconds_per_item": 17.91,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 08:32:45",
+      "note": "chunk=0 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4505.2,
+      "seconds_per_item": 18.02,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 09:47:50",
+      "note": "chunk=1 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4317.0,
+      "seconds_per_item": 17.27,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 10:59:47",
+      "note": "chunk=2 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4292.0,
+      "seconds_per_item": 17.17,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 12:11:19",
+      "note": "chunk=3 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4423.2,
+      "seconds_per_item": 17.69,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 13:25:02",
+      "note": "chunk=4 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4468.7,
+      "seconds_per_item": 17.87,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 14:39:31",
+      "note": "chunk=5 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4376.0,
+      "seconds_per_item": 17.5,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 15:52:27",
+      "note": "chunk=6 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4552.0,
+      "seconds_per_item": 18.21,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 17:08:19",
+      "note": "chunk=7 recycle=3"
+    }
+  ],
+  "predict.noise05": [
+    {
+      "n_items": 250,
+      "seconds": 4507.3,
+      "seconds_per_item": 18.03,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 18:23:26",
+      "note": "chunk=0 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4512.6,
+      "seconds_per_item": 18.05,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 19:38:39",
+      "note": "chunk=1 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4224.2,
+      "seconds_per_item": 16.9,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 20:49:03",
+      "note": "chunk=2 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4308.3,
+      "seconds_per_item": 17.23,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 22:00:51",
+      "note": "chunk=3 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4307.4,
+      "seconds_per_item": 17.23,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-09-30 23:12:39",
+      "note": "chunk=4 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4486.3,
+      "seconds_per_item": 17.95,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-01 00:27:25",
+      "note": "chunk=5 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4377.7,
+      "seconds_per_item": 17.51,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-01 01:40:23",
+      "note": "chunk=6 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4496.9,
+      "seconds_per_item": 17.99,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-01 02:55:19",
+      "note": "chunk=7 recycle=3"
+    }
+  ],
+  "predict.negctrl": [
+    {
+      "n_items": 250,
+      "seconds": 4496.5,
+      "seconds_per_item": 17.99,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-01 04:10:16",
+      "note": "chunk=0 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 4574.7,
+      "seconds_per_item": 18.3,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-01 05:26:31",
+      "note": "chunk=1 recycle=3"
+    },
+    {
+      "n_items": 100,
+      "seconds": 2734.2,
+      "seconds_per_item": 27.34,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-01 06:12:05",
+      "note": "chunk=2 recycle=3"
+    }
+  ],
+  "diffusion.betastrand": [
+    {
+      "n_items": 300,
+      "seconds": 28283.3,
+      "seconds_per_item": 94.28,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-01 23:32:51",
+      "note": "hotspots=[A56,A115,A121,A123] noise_ca=0.0"
+    }
+  ],
+  "sequence.refine150": [
+    {
+      "n_items": 1200,
+      "seconds": 29039.7,
+      "seconds_per_item": 24.2,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-01 23:41:09",
+      "note": "device=cpu relax_cycles=0 soluble=True"
+    }
+  ],
+  "predict.refine150": [
+    {
+      "n_items": 250,
+      "seconds": 3132.3,
+      "seconds_per_item": 12.53,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-02 00:33:21",
+      "note": "chunk=0 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 3430.8,
+      "seconds_per_item": 13.72,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-02 01:30:32",
+      "note": "chunk=1 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 3410.7,
+      "seconds_per_item": 13.64,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-02 02:27:23",
+      "note": "chunk=2 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 3107.1,
+      "seconds_per_item": 12.43,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-02 03:19:10",
+      "note": "chunk=3 recycle=3"
+    },
+    {
+      "n_items": 200,
+      "seconds": 2935.5,
+      "seconds_per_item": 14.68,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-02 04:08:05",
+      "note": "chunk=4 recycle=3"
+    }
+  ],
+  "sequence.betastrand": [
+    {
+      "n_items": 600,
+      "seconds": 638.7,
+      "seconds_per_item": 1.06,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-02 04:18:46",
+      "note": "device=cpu relax_cycles=0 soluble=True"
+    }
+  ],
+  "predict.betastrand": [
+    {
+      "n_items": 250,
+      "seconds": 2080.3,
+      "seconds_per_item": 8.32,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-02 04:53:27",
+      "note": "chunk=0 recycle=3"
+    },
+    {
+      "n_items": 250,
+      "seconds": 2078.5,
+      "seconds_per_item": 8.31,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-02 05:28:06",
+      "note": "chunk=1 recycle=3"
+    },
+    {
+      "n_items": 100,
+      "seconds": 880.0,
+      "seconds_per_item": 8.8,
+      "gpu": "RTX4080S-32G",
+      "recorded_at": "2026-10-02 05:42:46",
+      "note": "chunk=2 recycle=3"
+    }
+  ]
+}

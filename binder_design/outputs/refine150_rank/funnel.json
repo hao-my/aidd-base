@@ -1,0 +1,20 @@
+{
+  "campaign": "refine150",
+  "by_group": {
+    "refine150": {
+      "backbones_generated": 150,
+      "af2_predicted": 1200,
+      "passed_primary": 874,
+      "pass_rate": 0.7283,
+      "rate_plddt_binder": 0.9683,
+      "rate_pae_interaction": 0.7533,
+      "rate_binder_aligned_rmsd": 0.9142
+    }
+  },
+  "total": {
+    "af2_predicted": 1200,
+    "passed_primary": 874,
+    "clusters": 616,
+    "top_n": 20
+  }
+}

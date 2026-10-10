@@ -1,0 +1,23 @@
+# 结构文件体积大且可重算，不进仓库（约 3.5 GB）
+outputs/diffusion/
+outputs/sequences/
+outputs/af2/
+data/target/*.pdb
+
+# RFdiffusion 每次运行的 Hydra 日志，含本机绝对路径
+outputs/2026-*/
+
+# 可从骨架重算的中间文件
+outputs/tmscore/*_scores.f32
+outputs/tmscore/*_names.json
+outputs/interface_scores.binder_sap.csv
+
+# 已放弃的 β 链配置，里面写死了云主机路径
+config/campaign_betasheet.yaml
+
+# Python 3.12 虚拟环境，只给 TM-score 聚类用
+.venv-tmtools/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

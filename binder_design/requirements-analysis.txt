@@ -1,0 +1,6 @@
+# 本机侧依赖：靶点准备（01）、过滤（05）、出图（analysis/）。
+# GPU 阶段的依赖由 conda 环境提供，见 env/SETUP.md。
+biopython>=1.81
+pandas>=2.0
+matplotlib>=3.7
+PyYAML>=6.0

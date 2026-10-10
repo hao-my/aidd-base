@@ -1,0 +1,47 @@
+# 过滤阈值。三条主过滤直接对应 RFdiffusion 论文 (Watson et al., Nature 2023)
+# Extended Data Fig. 8f 里的 in silico success 定义，该定义又沿用
+# Bennett et al., Nat Commun 2023 的实验校准结果。
+#
+# 字段名是 dl_binder_design 的 af2_initial_guess/predict.py 实际写入 out.sc 的列名，
+# 完整列为：plddt_total plddt_binder plddt_target pae_binder pae_target
+#           pae_interaction binder_aligned_rmsd target_aligned_rmsd time description
+
+primary:
+  # 单体置信度。论文口径是 AF2 monomer pLDDT > 80。
+  # out.sc 里对应 binder 链的平均 pLDDT。
+  plddt_binder:
+    op: ">"
+    value: 80.0
+  # 界面预测对齐误差。Bennett 2023 发现实验成功率在这条线附近陡增。
+  # 这是整条流程最有预测力的单一指标。
+  pae_interaction:
+    op: "<"
+    value: 10.0
+  # AF2 预测的 binder 相对设计骨架的偏移，论文口径 < 1 Å。
+  binder_aligned_rmsd:
+    op: "<"
+    value: 1.0
+
+# 通过主过滤后的排序与去冗余。
+# 这一层不是论文标准，只是为了避免最终 top-N 里全是同一个折叠的近亲。
+ranking:
+  # 主排序键，越小越好
+  sort_by: pae_interaction
+  ascending: true
+  # 序列相似度去冗余：贪心聚类，同簇内只留排序最好的一个。
+  # 用序列而不是 TM-score，是为了不引入 TMalign 依赖；
+  # 若已装 TMalign 可以把 cluster.method 改成 tmscore。
+  cluster:
+    method: sequence_identity
+    identity_threshold: 0.70
+    # 每个簇最多保留几个代表
+    max_per_cluster: 1
+  top_n: 20
+
+# 报告里额外展示但不用于过滤的指标，便于看分布和相关性
+report_only:
+  - plddt_total
+  - plddt_target
+  - pae_binder
+  - pae_target
+  - target_aligned_rmsd

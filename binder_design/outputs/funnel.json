@@ -1,0 +1,38 @@
+{
+  "campaign": "full",
+  "by_group": {
+    "negctrl": {
+      "backbones_generated": 300,
+      "af2_predicted": 600,
+      "passed_primary": 0,
+      "pass_rate": 0.0,
+      "rate_plddt_binder": 0.8917,
+      "rate_pae_interaction": 0.0,
+      "rate_binder_aligned_rmsd": 0.745
+    },
+    "noise00": {
+      "backbones_generated": 1000,
+      "af2_predicted": 2000,
+      "passed_primary": 496,
+      "pass_rate": 0.248,
+      "rate_plddt_binder": 0.894,
+      "rate_pae_interaction": 0.276,
+      "rate_binder_aligned_rmsd": 0.746
+    },
+    "noise05": {
+      "backbones_generated": 1000,
+      "af2_predicted": 2000,
+      "passed_primary": 418,
+      "pass_rate": 0.209,
+      "rate_plddt_binder": 0.915,
+      "rate_pae_interaction": 0.2555,
+      "rate_binder_aligned_rmsd": 0.655
+    }
+  },
+  "total": {
+    "af2_predicted": 4600,
+    "passed_primary": 914,
+    "clusters": 843,
+    "top_n": 20
+  }
+}

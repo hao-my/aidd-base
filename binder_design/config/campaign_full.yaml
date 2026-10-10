@@ -1,0 +1,42 @@
+# 正式 campaign。规模按试点实测的 throughput.json 再定，
+# 下面给的是 B 档（约 60-80 GPU 小时）的数字。
+#
+# 改小到 A 档：两组噪声各 250，阴性对照 150。
+# 改大到论文规模：两组各 5000，但边际收益很低。
+
+name: full
+
+diffusion:
+  groups:
+    # 消融轴：推理噪声。RFdiffusion 论文 Extended Data Fig. 8e 显示
+    # 降噪能提高 interaction pAE 的分布质量，这里独立复现该趋势。
+    - name: noise00
+      hotspot_set: design
+      num_designs: 1000
+      noise_scale_ca: 0.0
+      noise_scale_frame: 0.0
+    - name: noise05
+      hotspot_set: design
+      num_designs: 1000
+      noise_scale_ca: 0.5
+      noise_scale_frame: 0.5
+  extra_args: []
+
+sequence:
+  seqs_per_struct: 2
+  relax_cycles: 0
+  use_soluble_weights: true
+  device: cpu
+
+predict:
+  # AF2 是整条流程的瓶颈。分片提交，方便中断续跑，
+  # 也避免一个实例跑几十小时中途掉线全丢。
+  chunk_size: 250
+
+negative_control:
+  # 阴性对照：hotspot 换到靶蛋白背面，其余参数完全一致。
+  # 用来证明漏斗筛的是界面信号，不是 AF2 的整体乐观偏差。
+  enabled: true
+  num_designs: 300
+  noise_scale_ca: 0.0
+  noise_scale_frame: 0.0
